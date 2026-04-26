@@ -38,7 +38,7 @@
             title: 'Website Portofolio',
             icon: 'fa-robot',
             description: `
-                <p><strong>Website Portofolio </strong> Yang saya kembangkan sendiri dan menggunakan bantuan A.I, website ini berisi tentang dokumentasi project Owner, seperti halnya Website Portofolio lainnya.</p>
+                <p><strong>Website Portofolio </strong> adalah situs personal untuk menampilkan karya, pengalaman, dan keahlian secara digital guna meningkatkan personal branding dan menarik klien atau perekrut.</p>
                 <p><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">Javascript</span><span class="tech-tag">Gtihub</span></p>
                 <p><strong>Spesifikasi:</strong></p>
                 <ul>
@@ -62,7 +62,7 @@
             title: 'Game tebak kata hewan',
             icon: 'fa-helicopter',
             description: `
-                <p><strong>Game Tebak Kata Hewan</strong> Bebasis Python Yang saya kembangkan bersama teman saya dan dijalankan di webstite, yang dimana game basis awal game ini adalah Python kemudian saya jalankan di website menggunakan: ,selain unik game ini juga dapat mengasah otak pemain.</p>
+                <p><strong>Game Tebak Kata Hewan</strong> Bebasis Python Yang saya kembangkan bersama teman saya saat mengikuti sebuah lomba, pada awalnya game ini menggunakan bahasa python dan kemudian saya pindahkan logika gamenya ke HTML & Javascript agar bisa berjalan di website.</p>
                 <p><span class="tech-tag">Python</span><span class="tech-tag">HTML & CSS</span><span class="tech-tag">Javascript</span></p>
                 <p><strong>Komponen Utama:</strong></p>
                 <ul>
