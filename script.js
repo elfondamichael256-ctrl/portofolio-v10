@@ -62,7 +62,7 @@
             title: 'Game tebak kata hewan',
             icon: 'fa-helicopter',
             description: `
-                <p><strong>Game Tebak Kata Hewan</strong> Bebasis Python Yang saya kembangkan bersama teman saya saat mengikuti sebuah lomba, pada awalnya game ini menggunakan bahasa python dan kemudian saya pindahkan logika gamenya ke HTML & Javascript agar bisa berjalan di website.</p>
+                <p><strong>Game Tebak Kata Hewan</strong> Bebasis Python Yang saya kembangkan bersama teman saya saat mengikuti sebuah lomba, pada awalnya game ini menggunakan bahasa python dan kemudian saya pindahkan logika gamenya ke HTML & Javascript agar bisa berjalan di websitse.</p>
                 <p><span class="tech-tag">Python</span><span class="tech-tag">HTML & CSS</span><span class="tech-tag">Javascript</span></p>
                 <p><strong>Komponen Utama:</strong></p>
                 <ul>
