@@ -1,4 +1,55 @@
 (function() {
+//  array 5 kalimat berbeda
+const words = [
+  'Elfonda Michael',
+  'Software engginer',
+  'Web Developer',
+];
+
+const typingText = document.querySelector('.typing-text');
+const cursor = document.querySelector('.cursor');
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let isWaiting = false;
+
+function type() {
+  const currentWord = words[wordIndex];
+  
+  if (isWaiting) {
+    setTimeout(() => {
+      isWaiting = false;
+      isDeleting = true;
+      type();
+    }, 2000);
+    return;
+  }
+  
+  if (isDeleting) {
+    typingText.textContent = currentWord.substring(0, charIndex - 1);
+    charIndex--;
+  } else {
+    typingText.textContent = currentWord.substring(0, charIndex + 1);
+    charIndex++;
+  }
+  
+  let typeSpeed = isDeleting ? 50 : 100;
+  
+  if (!isDeleting && charIndex === currentWord.length) {
+    isWaiting = true;
+    typeSpeed = 2000;
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    wordIndex = (wordIndex + 1) % words.length;
+    typeSpeed = 500;
+  }
+  
+  setTimeout(type, typeSpeed);
+}
+
+// Start the typing animation
+type();
+
     // --- DOM Elements ---
     const modalOverlay = document.getElementById('projectModal');
     const modalTitle = document.getElementById('modalTitle');
@@ -46,7 +97,7 @@
                     <li>Bahasa Pemograman: HTML, CSS, & Javascript.</li>
                     <li>Penggembang: Saya Sendiri</li>
                     <li>Nama A.I: Deepseek</li>
-                    <li>Penggunaan A.I: 52%</li>
+                    <li>Penggunaan A.I: 55%</li>
                     <li>Platform: Github</li>
                 </ul>
                 <p>Website Ini sudah 5 kali berganti model Prototype sebelum akhirnya bisa dipublikasikan.</p>
