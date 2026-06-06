@@ -62,7 +62,7 @@ type();
     // --- DATABASE PROJECT DETAIL + GALERI FOTO ---
     const projectDetails = {
         linefollower: {
-            title: 'Robot Line Follower',
+            title: 'Detail Project Robot Line Follower',
             icon: 'fa-microchip',
             description: `
                 <p><strong>Robot Line Follower</strong> jenis robot otonom yang dirancang untuk bergerak mengikuti jalur garis panduan tertentu, biasanya garis hitam di atas permukaan putih, atau sebaliknya.</p>
@@ -72,9 +72,10 @@ type();
                     <li>Mikrokontroler: Arduino Uno</li>
                     <li>Sensor: 2x TCRT5000 Infrared Sensor</li>
                     <li>Motor Driver: L298N</li>
+                    <li>Jumlah Roda: 3x Roda (2x roda penggerak & 1x roda idle).</li>
                     <li>Penggerak: 2x DC Motor 5V dengan Gearbox</li>
                     <li>Power: 3x Baterai 4000mah</li>
-                    <li>Bahasa Pemograman: Arduino IDE</li>
+                    <li>Bahasa Pemograman: Arduino IDE/C++</li>
                 </ul>
                 <p>Robot ini berhasil menyelesaikan LIntasan berbelok-belok sepanjang 120 cm.</strong> pada Lintasan di lantai.</p>
             `,
@@ -85,9 +86,9 @@ type();
                 { url: 'image/FotoGulir4.webp', caption: '' }
             ]
         },
-        roboticarm: {
-            title: 'Website Portofolio',
-            icon: 'fa-robot',
+        Website: {
+            title: 'Detail Project Website Portofolio',
+            icon: 'fa-code',
             description: `
                 <p><strong>Website Portofolio </strong> adalah situs personal untuk menampilkan karya, pengalaman, dan keahlian secara digital guna meningkatkan personal branding dan menarik klien atau perekrut.</p>
                 <p><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">Javascript</span><span class="tech-tag">Gtihub</span></p>
@@ -109,9 +110,9 @@ type();
                 { url: 'image/CuplikanWebsite4.webp', caption: '' }
             ]
         },
-        drone: {
-            title: 'Game tebak kata hewan',
-            icon: 'fa-helicopter',
+        gamepad: {
+            title: 'Detail Project Game tebak kata hewan',
+            icon: 'fa-gamepad',
             description: `
                 <p><strong>Game Tebak Kata Hewan</strong> Bebasis Python Yang saya kembangkan bersama teman saya saat mengikuti sebuah lomba, pada awalnya game ini menggunakan bahasa python dan kemudian saya pindahkan logika gamenya ke HTML & Javascript agar bisa berjalan di websitse.</p>
                 <p><span class="tech-tag">Python</span><span class="tech-tag">HTML & CSS</span><span class="tech-tag">Javascript</span></p>
@@ -133,7 +134,32 @@ type();
                 { url: 'image/Gamepad4.webp', caption: '' },
                 { url: 'image/Gamepad5.webp', caption: '' },
             ]
-        }
+        },
+        Avoider: {
+            title: 'Detail Project Robot Avoider',
+            icon: 'fa-robot',
+            description: `
+                <p><strong>Robot Avoider Adalah</strong> robot otonom yang dirancang untuk mendeteksi dan menghindari rintangan di jalurnya menggunakan sensor, biasanya ultrasonik, untuk navigasi yang aman. Robot ini umumnya berbasis mikrokontroler seperti Arduino dan menggunakan motor DC untuk pergerakan.</p>
+                <p><span class="tech-tag">Arduino Uno</span><span class="tech-tag">Arduino IDE/C++</span><span class="tech-tag">Motor Driver L298N</span><span class="tech-tag">Sensor Ultrasonik HC-SR04</span></p>
+                <p><strong>Spesifikasi Teknis:</strong></p>
+                <ul>
+                    <li>Mikrokontroler: Arduino Uno</li>
+                    <li>Sensor: 1x Seonsor Ultrasonik HC-SR04.</li>
+                    <li>Motor Driver: L298N</li>
+                    <li>Jumlah Roda: 3x roda (2x roda penggerak & 1x roda idle).</li>
+                    <li>Penggerak: 2x DC Motor 5V dengan Gearbox</li>
+                    <li>Power: 3x Baterai 4000mah</li>
+                    <li>Bahasa Pemograman: Arduino IDE/C++</li>
+                </ul>
+                <p>Robot Avoider berhasil mendeteksi objek penghalang secara otonom menggunakan sensor ultrasonik HC-SR04 dengan akurasi jarak yang cukup baik sesuai intruksi program.</p>
+            `,
+            gallery: [
+                { url: 'image/RobotAvoider1.webp', caption: '' },
+                { url: 'image/RobotAvoider2.webp', caption: '' },
+                { url: 'image/RobotAvoider3.webp', caption: '' },
+                { url: 'image/RobotAvoider4.webp', caption: '' }
+            ]
+        },
     };
 
     // Fungsi render galeri
