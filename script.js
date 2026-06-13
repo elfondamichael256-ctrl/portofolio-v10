@@ -17,7 +17,7 @@ function type() {
   const currentWord = words[wordIndex];
   
   if (isWaiting) {
-    setTimeout(() => {
+    setTimeout(() => { 
       isWaiting = false;
       isDeleting = true;
       type();
@@ -75,6 +75,7 @@ type();
                     <li>Jumlah Roda: 3x Roda (2x roda penggerak & 1x roda idle).</li>
                     <li>Penggerak: 2x DC Motor 5V dengan Gearbox</li>
                     <li>Power: 3x Baterai 4000mah</li>
+                    <li>Kode Editor:Visual Code Studio
                     <li>Bahasa Pemograman: Arduino IDE/C++</li>
                 </ul>
                 <p>Robot ini berhasil menyelesaikan LIntasan berbelok-belok sepanjang 120 cm.</strong> pada Lintasan di lantai.</p>
@@ -94,7 +95,7 @@ type();
                 <p><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">Javascript</span><span class="tech-tag">Gtihub</span></p>
                 <p><strong>Spesifikasi:</strong></p>
                 <ul>
-                    <li>Papan Editing: Visual Code Studio</li>
+                    <li>Kode Editor: Visual Code Studio</li>
                     <li>Bahasa Pemograman: HTML, CSS, & Javascript.</li>
                     <li>Penggembang: Saya Sendiri</li>
                     <li>Nama A.I: Deepseek</li>
@@ -118,7 +119,7 @@ type();
                 <p><span class="tech-tag">Python</span><span class="tech-tag">HTML & CSS</span><span class="tech-tag">Javascript</span></p>
                 <p><strong>Komponen Utama:</strong></p>
                 <ul>
-                    <li>Papan editng: Visual Code Studio</li>
+                    <li>Kode Editor: Visual Code Studio</li>
                     <li>Bahasa Pemograman: HTML, CSS, Javascript</li>
                     <li>Bahasa Pemograman awal: Python</li>
                     <li>Nama A.I: Chatgpt & Gemini</li>
@@ -148,7 +149,8 @@ type();
                     <li>Motor Driver: L298N</li>
                     <li>Jumlah Roda: 3x roda (2x roda penggerak & 1x roda idle).</li>
                     <li>Penggerak: 2x DC Motor 5V dengan Gearbox</li>
-                    <li>Power: 3x Baterai 4000mah</li>
+                    <li>Power: 3x Baterai 4000mah</li> 
+                    <li>Kode Editor: Visual Code Studio</li>
                     <li>Bahasa Pemograman: Arduino IDE/C++</li>
                 </ul>
                 <p>Robot Avoider berhasil mendeteksi objek penghalang secara otonom menggunakan sensor ultrasonik HC-SR04 dengan akurasi jarak yang cukup baik sesuai intruksi program.</p>
