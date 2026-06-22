@@ -1192,11 +1192,6 @@ footer {
     width: 280px;
   }
 
-  .other-pic {
-    margin: 0 auto;
-    width: 280px;
-  }
-
   .about-name {
     font-size: 2rem;
   }
@@ -1255,13 +1250,8 @@ footer {
   }
 
   .profile-pic {
-    width: 130px;
-    height: 130px;
-  }
-
-  .other-pic {
-    width: 130px;
-    height: 130px;
+    margin: 0 auto;
+    width: 280px;
   }
 
   .about-name {
