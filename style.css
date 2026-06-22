@@ -26,6 +26,7 @@ body {
 }
 
 .container {
+  margin-top: 5rem;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
@@ -37,7 +38,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   padding: 18px 32px;
   /* Efek glassmorphism */
   background: rgba(11, 13, 23, 0.7);
@@ -50,11 +51,16 @@ nav {
   z-index: 100;
 }
 
+/* Logo Container */
+nav div img {
+  width: 50px;
+}
+
 /* Brand / Logo */
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 14px;
   font-size: 1.8rem;
   font-weight: 800;
   color: #ffffff;
@@ -69,28 +75,36 @@ nav {
   text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
 }
 
-/* Link Navigasi */
-.nav-links {
+/* List Navigasi */
+nav ul {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px 32px;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
+/* Link Navigasi */
+nav ul li a {
   text-decoration: none;
-  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
   color: #a0b0c0;
   font-size: 1rem;
+  font-weight: 600;
   padding: 6px 0;
   position: relative;
   transition: color 0.3s ease, text-shadow 0.3s ease;
+  display: inline-block; /* Penting untuk efek garis pendek */
 }
 
-.nav-links a::after {
+/* Efek garis bawah animasi */
+nav ul li a::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%; /* Mulai dari tengah */
+  transform: translateX(-50%); /* Pusatkan posisi */
   width: 0;
   height: 2px;
   background: linear-gradient(90deg, #00d4ff, #0066ff);
@@ -99,13 +113,47 @@ nav {
   box-shadow: 0 0 15px rgba(0, 212, 255, 0.7);
 }
 
-.nav-links a:hover {
+/* Hover state */
+nav ul li a:hover {
   color: #ffffff;
   text-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
 }
 
-.nav-links a:hover::after {
+nav ul li a:hover::after {
   width: 100%;
+  left: 0; /* Kembali ke kiri */
+  transform: translateX(0); /* Hapus transform */
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  font-size: 28px;
+  display: none;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.menu-icon:hover {
+  color: #00d4ff;
+  text-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+}
+  
+/* Animasi tambahan untuk menu mobile */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav ul:not(.hidden) {
+  animation: slideDown 0.3s ease;
 }
 
 /* ===== SECTION ===== */
@@ -141,10 +189,11 @@ section {
 .home-wrapper {
   display: flex;
   align-items: center;
-  min-height: 20vh;
+  padding: 1px;
+  min-height: 50vh;
   width: 100%;
-  margin: 0;
-  background: linear-gradient(to bottom #0066ff 0% #00d4ff 100%)
+  gap: 5px;
+  background: #0b0d17;  
 }
 
 .home-content h1 {
@@ -199,14 +248,13 @@ section {
 .about-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px;
+  gap: 5px;
   align-items: center;
 }
 
 .profile-pic {
   flex: 0 0 180px;
   width: 280px;
-  height: 280px;
   border-radius: 20px;
   object-fit: cover;
   border: 2px solid #00d4ff;
@@ -223,6 +271,7 @@ section {
 .about-name {
   font-size: 2.6rem;
   font-weight: 700;
+  padding-left: 25px;
   margin-bottom: 16px;
   background: linear-gradient(135deg, #ffffff, #00d4ff);
   -webkit-background-clip: text;
@@ -272,6 +321,7 @@ section {
 
 .short-bio {
   margin-top: 24px;
+  padding-left: 25px;
   font-size: 1.15rem;
   color: #b0c0d0;
   max-width: 600px;
@@ -413,6 +463,23 @@ section {
 .skills-container {
   max-width: 700px;
   margin: 0 auto;
+}
+
+.skill-category h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 52px;
+  letter-spacing: -0.02em;
+  padding-left: 1;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+  position: relative;
+}
+
+.skill-category h3 i {
+ color: #fafafa;
+ font-size: 2.2rem;
+ padding-left: 1;
 }
 
 .skill-item {
@@ -989,6 +1056,37 @@ footer {
   }
 }
 
+/* scroll To Top */
+.scroll-up {
+   position: fixed;
+   bottom: -50px;
+   right: 40px;
+   background-color: #00d4ff;
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   cursor: pointer;
+   opacity: 0;
+   transition: all .3s ease;
+}
+
+.scroll-up.scroll-active {
+   bottom: 40px;
+   opacity: 1;
+}
+
+.scroll-up:hover {
+   background-color:  rgba(0, 212, 255, 0.3);
+}
+
+.scroll-up a {
+   color: white;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Tablet Landscape (max-width: 1024px) */
@@ -1012,60 +1110,67 @@ footer {
 
 /* Tablet Portrait (max-width: 768px) */
 @media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 1rem 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    /* Pusatkan konten ul */
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul li {
+    width: 100%;
+    /* Pusatkan teks dalam li */
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: inline-block; /* Penting agar efek garis tetap pendek */
+    padding: 12px 0;
+    margin: 4px 0;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.15);
+    font-size: 1.1rem; /* Sedikit lebih besar di mobile */
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul li:last-of-type a {
+    border-bottom: none;
+  }
+
+  /* Sembunyikan menu secara default di mobile */
+  nav ul.hidden {
+    display: none;
+  }
+
+  /* Tampilkan hamburger icon */
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+
   .container {
     padding: 0 20px;
-  }
-
-  /* ===== NAVIGASI MOBILE ===== */
-  nav {
-    padding: 16px 20px;
-    flex-direction: column;
-    gap: 16px;
-    background: rgba(11, 13, 23, 0.95);
-  }
-
-  .nav-brand {
-    font-size: 1.6rem;
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 8px;
-    border-bottom: 1px solid rgba(0, 212, 255, 0.15);
-  }
-
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 12px;
-    justify-content: center;
-    width: 100%;
-    padding: 4px 0;
-  }
-
-  .nav-links a {
-    font-size: 0.85rem;
-    padding: 8px 16px;
-    background: rgba(0, 212, 255, 0.05);
-    border: 1px solid rgba(0, 212, 255, 0.15);
-    border-radius: 20px;
-    color: #b0c0d0;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-  }
-
-  .nav-links a:hover {
-    background: rgba(0, 212, 255, 0.15);
-    border-color: #00d4ff;
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
-  }
-
-  .nav-links a::after {
-    display: none;
   }
 
   /* Section & Content */
   section {
     padding: 48px 0;
+  }
+
+  .home-wrapper {
+    min-height: 60vh;
   }
 
   .home-content h1 {
@@ -1084,8 +1189,12 @@ footer {
 
   .profile-pic {
     margin: 0 auto;
-    width: 150px;
-    height: 150px;
+    width: 280px;
+  }
+
+  .other-pic {
+    margin: 0 auto;
+    width: 280px;
   }
 
   .about-name {
@@ -1128,30 +1237,6 @@ footer {
 
 /* Large Phone (max-width: 480px) */
 @media (max-width: 480px) {
-  nav {
-    padding: 12px 16px;
-    gap: 12px;
-  }
-
-  .nav-brand {
-    font-size: 1.4rem;
-    padding-bottom: 6px;
-  }
-
-  .nav-links {
-    gap: 6px 8px;
-  }
-
-  .nav-links a {
-    font-size: 0.8rem;
-    padding: 6px 14px;
-    border-radius: 16px;
-  }
-
-  .container {
-    padding: 0 16px;
-  }
-
   section {
     padding: 40px 0;
   }
@@ -1174,6 +1259,11 @@ footer {
     height: 130px;
   }
 
+  .other-pic {
+    width: 130px;
+    height: 130px;
+  }
+
   .about-name {
     font-size: 1.8rem;
   }
@@ -1187,26 +1277,14 @@ footer {
   .other-grid {
     grid-template-columns: 1fr;
   }
+
+  .other-grid,
+  .other-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scroll-up {
+      right: 20px;
+   }
 }
 
-/* Small Phone (max-width: 380px) */
-@media (max-width: 380px) {
-  nav {
-    padding: 10px 12px;
-    gap: 10px;
-  }
-
-  .nav-brand {
-    font-size: 1.3rem;
-  }
-
-  .nav-links a {
-    font-size: 0.75rem;
-    padding: 6px 12px;
-    border-radius: 14px;
-  }
-
-  .home-content h1 {
-    font-size: 2rem;
-  }
-}
