@@ -1116,6 +1116,7 @@ footer {
     width: 100%;
     top: 0;
     padding: 1rem 2rem;
+    overflow: hidden;
   }
 
   nav ul {
@@ -1277,4 +1278,3 @@ footer {
       right: 20px;
    }
 }
-
