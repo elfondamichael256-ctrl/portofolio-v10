@@ -1094,10 +1094,28 @@ footer {
   nav {
     padding: 16px 24px;
   }
+
+  .nav-brand {
+    font-size: 1.5rem;
+  }
   
+  nav ul {
+    gap: 2rem;
+    padding-right: 1;
+}
+
+  nav ul li a {
+    font-size: 0.9rem;
+    font-weight: 800;
+  }
+    
+    
+
   .nav-links {
     gap: 15px 24px;
   }
+
+  
   
   .stat-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1108,59 +1126,61 @@ footer {
   }
 }
 
+@media (max-width: 880px) {
+  nav {
+      flex-wrap: wrap;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      padding: 1rem 2rem;
+      overflow-x: auto;
+    }
+
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+      gap: 0;
+      /* Pusatkan konten ul */
+      align-items: center;
+      text-align: center;
+    }
+
+    nav ul li {
+      width: 100%;
+      /* Pusatkan teks dalam li */
+      text-align: center;
+    }
+
+    nav ul li a {
+      display: inline-block; /* Penting agar efek garis tetap pendek */
+      padding: 12px 0;
+      margin: 4px 0;
+      border-bottom: 1px solid rgba(0, 212, 255, 0.15);
+      font-size: 1.1rem; /* Sedikit lebih besar di mobile */
+    }
+
+    nav ul li:last-of-type {
+      padding-bottom: 8px;
+    }
+
+    nav ul li:last-of-type a {
+      border-bottom: none;
+    }
+
+    /* Sembunyikan menu secara default di mobile */
+    nav ul.hidden {
+      display: none;
+    }
+
+    /* Tampilkan hamburger icon */
+    .menu-icon {
+      display: block;
+      align-items: center;
+    }
+} 
+
 /* Tablet Portrait (max-width: 768px) */
 @media (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    padding: 1rem 2rem;
-    overflow: hidden;
-  }
-
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-    /* Pusatkan konten ul */
-    align-items: center;
-    text-align: center;
-  }
-
-  nav ul li {
-    width: 100%;
-    /* Pusatkan teks dalam li */
-    text-align: center;
-  }
-
-  nav ul li a {
-    display: inline-block; /* Penting agar efek garis tetap pendek */
-    padding: 12px 0;
-    margin: 4px 0;
-    border-bottom: 1px solid rgba(0, 212, 255, 0.15);
-    font-size: 1.1rem; /* Sedikit lebih besar di mobile */
-  }
-
-  nav ul li:last-of-type {
-    padding-bottom: 8px;
-  }
-
-  nav ul li:last-of-type a {
-    border-bottom: none;
-  }
-
-  /* Sembunyikan menu secara default di mobile */
-  nav ul.hidden {
-    display: none;
-  }
-
-  /* Tampilkan hamburger icon */
-  .menu-icon {
-    display: flex;
-    align-items: center;
-  }
-
   .container {
     padding: 0 20px;
   }
