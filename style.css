@@ -1176,6 +1176,7 @@ footer {
     .menu-icon {
       display: block;
       align-items: center;
+      position: fixed;
     }
 } 
 
