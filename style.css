@@ -1174,9 +1174,8 @@ footer {
 
     /* Tampilkan hamburger icon */
     .menu-icon {
-      display: block;
+      display: flex;
       align-items: center;
-      position: fixed;
     }
 } 
 
