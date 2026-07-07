@@ -1176,6 +1176,7 @@ footer {
     .menu-icon {
       display: flex;
       align-items: center;
+      overlay: hidden;
     }
 } 
 
@@ -1296,5 +1297,6 @@ footer {
 
   .scroll-up {
       right: 20px;
+      position: fixed;
    }
 }
