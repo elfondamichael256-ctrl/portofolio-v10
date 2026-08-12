@@ -77,8 +77,8 @@
                     <li>Jumlah Roda: 3x Roda (2x roda penggerak & 1x roda idle).</li>
                     <li>Penggerak: 2x DC Motor 5V dengan Gearbox</li>
                     <li>Power: 3x Baterai 4000mah</li>
-                    <li>Kode Editor:Visual Code Studio
-                    <li>Bahasa Pemograman: Arduino IDE/C++</li>
+                    <li>Kode Editor: Arduino IDE</li>
+                    <li>Bahasa Pemograman: C++</li>
                 </ul>
                 <p>Robot ini berhasil menyelesaikan LIntasan berbelok-belok sepanjang 120 cm.</strong> pada Lintasan di lantai.</p>
             `,
@@ -102,7 +102,7 @@
                     <li>Penggembang: Saya Sendiri</li>
                     <li>Nama A.I: Deepseek</li>
                     <li>Penggunaan A.I: 55%</li>
-                    <li>Platform: Github</li>
+                    <li>Tempat Hosting: Github & Vercel</li>
                 </ul>
                 <p>Website Ini sudah 5 kali berganti model Prototype sebelum akhirnya bisa dipublikasikan.</p>
             `,
@@ -126,7 +126,7 @@
                     <li>Bahasa Pemograman awal: Python</li>
                     <li>Nama A.I: Chatgpt & Gemini</li>
                     <li>Penggembang: Saya Dan Teman Saya</li>
-                    <li>Platform: Github</li>
+                    <li>Tempat Hosting: Github & Vercel</li>
                 </ul>
                 <p>Anda bisa memainkan game tersebut di link yang telah saya sediakan di "Website & Game"</p>
             `,
@@ -152,8 +152,8 @@
                     <li>Jumlah Roda: 3x roda (2x roda penggerak & 1x roda idle).</li>
                     <li>Penggerak: 2x DC Motor 5V dengan Gearbox</li>
                     <li>Power: 3x Baterai 4000mah</li> 
-                    <li>Kode Editor: Visual Code Studio</li>
-                    <li>Bahasa Pemograman: Arduino IDE/C++</li>
+                    <li>Kode Editor: Arduino IDE</li>
+                    <li>Bahasa Pemograman: C++</li>
                 </ul>
                 <p>Robot Avoider berhasil mendeteksi objek penghalang secara otonom menggunakan sensor ultrasonik HC-SR04 dengan akurasi jarak yang cukup baik sesuai intruksi program.</p>
             `,
@@ -162,6 +162,29 @@
         { url: "image/RobotAvoider2.webp", caption: "" },
         { url: "image/RobotAvoider3.webp", caption: "" },
         { url: "image/RobotAvoider4.webp", caption: "" },
+      ],
+    },
+    Calculator: {
+      title: "Detail Project Kalkulator Aritmetika",
+      icon: "fa-calculator",
+      description: `
+                <p><strong>kalkulator artimetika adalah</strong>adalah alat komputasi yang dirancang untuk melakukan operasi matematika dasar dan lanjutan. Ini termasuk penjumlahan, pengurangan, perkalian, dan pembagian, serta operasi yang lebih kompleks seperti akar kuadrat, logaritma, dan fungsi trigonometri. Kalkulator ini mempermudah perhitungan dalam berbagai bidang, termasuk ilmu pengetahuan, fisika, dan teknik.</p>
+                <p><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">Javascript</span></p>
+                <p><strong>Spesifikasi Teknis</strong></p>
+                <ul>
+                  <li>Kode editor: Visual Studio Code.</li>
+                  <li>Bahasa Pemograman: HTML, CSS, Javascript.</li>
+                  <li>Pengembang: Saya dan teman saya.</li>
+                  <li>Nama A.I: DeepSeek.</li>
+                  <li>Penggunaan A.I: 48%.</li>
+                  <li>Tempat Hosting: Github & Vercel.</li>
+                </ul>
+                <p>Website ini dikembangkan oleh 3 orang yaitu M. Ibnu sona, Elfonda Michael, & M. Darul Ridwan, yang dimana saya sebagai developernya sementara dua orang sebagai koreksi desain & pemberi saran. kemudian website ini di hosting di Github & Vercel</p>
+      `,
+      gallery: [
+        { url: "image/FotoKalkulator1.webp", caption:"" },
+        { url: "image/FotoKalkulator2.webp", caption:"" },
+        { url: "image/FotoKalkulator3.webp", caption:"" },
       ],
     },
   };
