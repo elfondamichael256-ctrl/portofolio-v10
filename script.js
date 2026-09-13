@@ -103,6 +103,7 @@
                     <li>Nama A.I: Deepseek</li>
                     <li>Penggunaan A.I: 55%</li>
                     <li>Tempat Hosting: Github & Vercel</li>
+                    <li>Version: 2.0.5</li>
                 </ul>
                 <p>Website Ini sudah 5 kali berganti model Prototype sebelum akhirnya bisa dipublikasikan.</p>
             `,
@@ -127,6 +128,7 @@
                     <li>Nama A.I: Chatgpt & Gemini</li>
                     <li>Penggembang: Saya Dan Teman Saya</li>
                     <li>Tempat Hosting: Github & Vercel</li>
+                    <li>Version: 1.0.1</li>
                 </ul>
                 <p>Anda bisa memainkan game tersebut di link yang telah saya sediakan di "Website & Game"</p>
             `,
@@ -168,7 +170,7 @@
       title: "Detail Project Kalkulator Aritmetika",
       icon: "fa-calculator",
       description: `
-                <p><strong>kalkulator artimetika adalah</strong>adalah alat komputasi yang dirancang untuk melakukan operasi matematika dasar dan lanjutan. Ini termasuk penjumlahan, pengurangan, perkalian, dan pembagian, serta operasi yang lebih kompleks seperti akar kuadrat, logaritma, dan fungsi trigonometri. Kalkulator ini mempermudah perhitungan dalam berbagai bidang, termasuk ilmu pengetahuan, fisika, dan teknik.</p>
+                <p><strong>Website ini berisi </strong>Tentang kalkulator-kalkulator yang bisa digunakan untuk membantu mengerjakan tugas sehari .</p>
                 <p><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">Javascript</span></p>
                 <p><strong>Spesifikasi Teknis</strong></p>
                 <ul>
@@ -176,15 +178,18 @@
                   <li>Bahasa Pemograman: HTML, CSS, Javascript.</li>
                   <li>Pengembang: Saya dan teman saya.</li>
                   <li>Nama A.I: DeepSeek.</li>
-                  <li>Penggunaan A.I: 48%.</li>
+                  <li>Penggunaan A.I: 60%.</li>
                   <li>Tempat Hosting: Github & Vercel.</li>
+                  <li>Version: 1.0.4</li>
                 </ul>
                 <p>Website ini dikembangkan oleh 3 orang yaitu M. Ibnu sona, Elfonda Michael, & M. Darul Ridwan, yang dimana saya sebagai developernya sementara dua orang sebagai koreksi desain & pemberi saran. kemudian website ini di hosting di Github & Vercel</p>
       `,
       gallery: [
-        { url: "image/FotoKalkulator1.webp", caption:"" },
-        { url: "image/FotoKalkulator2.webp", caption:"" },
-        { url: "image/FotoKalkulator3.webp", caption:"" },
+        { url: "image/FotoKalkulator1.webp", caption: "" },
+        { url: "image/FotoKalkulator2.webp", caption: "" },
+        { url: "image/FotoKalkulator3.webp", caption: "" },
+        { url: "image/FotoKalkulator4.webp", caption: "" },
+        { url: "image/FotoKalkulator5.webp", captiom: "" },
       ],
     },
   };
