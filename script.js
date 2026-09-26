@@ -177,10 +177,10 @@
                   <li>Kode editor: Visual Studio Code.</li>
                   <li>Bahasa Pemograman: HTML, CSS, Javascript.</li>
                   <li>Pengembang: Saya dan teman saya.</li>
-                  <li>Nama A.I: DeepSeek.</li>
+                  <li>Nama A.I: DeepSeek & Claude.</li>
                   <li>Penggunaan A.I: 60%.</li>
                   <li>Tempat Hosting: Github & Vercel.</li>
-                  <li>Version: 1.0.4</li>
+                  <li>Version: 1.0.7</li>
                 </ul>
                 <p>Website ini dikembangkan oleh 3 orang yaitu M. Ibnu sona, Elfonda Michael, & M. Darul Ridwan, yang dimana saya sebagai developernya sementara dua orang sebagai koreksi desain & pemberi saran. kemudian website ini di hosting di Github & Vercel</p>
       `,
